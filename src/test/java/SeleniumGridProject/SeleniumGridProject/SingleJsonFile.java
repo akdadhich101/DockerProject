@@ -56,6 +56,7 @@ public class SingleJsonFile {
 		String str1 = str.replace("\"{", "{");
 		String str2 = str1.replace("}\"", "}");
 		System.out.println(str2);
+		System.out.println("user 1 making changes");
 		
 		  FileWriter fw = new FileWriter("D:\\Selenium\\Projects\\APIAutomation\\SeleniumGridProject\\Files\\SingleJson.json");
 		  fw.write(str2);
