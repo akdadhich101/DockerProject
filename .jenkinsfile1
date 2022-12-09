@@ -1,0 +1,27 @@
+pipeline{
+	agent any
+
+	stages{
+
+		stage('clean'){
+			steps{
+				bat "mvn clean"
+				}
+				
+			}
+
+		stage('build){
+			steps{
+				bat "mvn install"
+				}
+
+			}
+		stage('Execute Docker project'){
+			steps{
+				bat "mvn test"
+				}
+
+			}
+			
+		}
+	}
