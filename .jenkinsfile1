@@ -10,9 +10,9 @@ pipeline{
 				
 			}
 
-		stage('build){
+		stage('build'){
 			steps{
-				bat "mvn install"
+				echo "mvn install"
 				}
 
 			}
